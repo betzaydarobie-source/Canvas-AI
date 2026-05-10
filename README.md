@@ -6,6 +6,8 @@
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-macOS%20%7C%20Windows-lightgrey.svg)]()
 
+> 🆕 **第一次用？** 跟着 [👉 新手完整指南](./新手完整指南.md) 一步一步来，**10 分钟从零开始跑出第一张图**（含截图）
+
 ---
 
 ## ✨ 三种模式
@@ -89,9 +91,14 @@ npm run dist:win    # Windows nsis + portable exe
 
 ---
 
-## 📖 完整使用说明
+## 📖 文档
 
-详细的使用教程见 **[使用说明.md](./使用说明.md)**，包含：
+| 文档 | 适合谁 |
+|------|------|
+| 🆕 **[新手完整指南](./新手完整指南.md)** | 第一次用 · 含截图 · 从注册到出图全流程 |
+| 📖 **[使用说明](./使用说明.md)** | 已经会用 · 详细查阅每个功能 |
+
+完整使用说明包含：
 - 每种模式的详细操作流程
 - 30+ 模型支持的比例 / 分辨率对照表
 - 25 条 MJ 命令完整列表
