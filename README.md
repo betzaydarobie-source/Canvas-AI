@@ -25,6 +25,31 @@ ComfyUI 风的节点式编辑器：
 
 ---
 
+## 🔌 配套 API 服务：yC API 中转站
+
+Canvas-AI 调用的是 **OpenAI 兼容协议**，默认指向我们自营的中转站 **[yC API](https://www.yccloudapi.online)** —— 一个国内直连的 AI 模型聚合中转。
+
+### ✨ 为什么用 yC API
+
+| 优势 | 说明 |
+|------|------|
+| 🎯 **30+ 模型一站式** | GPT Image 1/2 · Flux Pro 全系 · Seedream 3.0~5.0 · Gemini 2.5 Flash / 3 Pro · Grok 3/4 · Midjourney · Ideogram V1/V2/V3 · Qwen Image Max · DeepSeek · Claude Sonnet/Opus 4.5 |
+| 🌏 **国内直连** | 无需科学上网，免代理直接调用 |
+| 💳 **按量计费** | 充值即用，不绑定订阅，没用完不过期 |
+| 🔄 **高可用多线路** | 自动切换备用线路，单点异常不影响业务 |
+| 🛠️ **OpenAI 兼容** | 用现有 SDK 改 `base_url` 即可接入，无侵入 |
+
+### 🚀 快速接入
+
+1. **[点这里注册 yC API 账号 →](https://www.yccloudapi.online)**
+2. 充值（有新人额度可以先试）
+3. 在控制台生成 API Key（`sk-` 开头）
+4. 在 Canvas-AI 左下齿轮 ⚙️ 里粘贴 Key → 保存
+
+> Canvas-AI 也支持其他任意 OpenAI 兼容的 API 中转。直接改 `.env` 里的 `API_BASE` 指向你想要的端点即可（例如 OpenAI 官方、Claude API、自建 LiteLLM 等）。
+
+---
+
 ## 🚀 快速上手
 
 ### 桌面应用（推荐）
@@ -45,9 +70,10 @@ git clone https://github.com/betzaydarobie-source/Canvas-AI.git
 cd Canvas-AI
 npm install
 
-# 配置 API Key（OpenAI 兼容的 base url 都行）
+# 配置 API Key（默认指向 yC API：https://www.yccloudapi.online）
 cp .env.example .env
-# 编辑 .env，填入你的 API_KEY 和 API_BASE
+# 编辑 .env，填入你在 yC API 注册后拿到的 sk- 开头的 Key
+# 也可以改 API_BASE 用其他 OpenAI 兼容端点
 
 # 启动浏览器版
 npm start
@@ -106,6 +132,15 @@ npm run dist:win    # Windows nsis + portable exe
 
 ---
 
+## 🔗 相关链接
+
+- 🌐 **官方网站**：[https://www.yccloudapi.online](https://www.yccloudapi.online)
+- 📖 **使用文档**：[使用说明.md](./使用说明.md)
+- 🐛 **Bug 反馈**：[GitHub Issues](https://github.com/betzaydarobie-source/Canvas-AI/issues)
+- 📦 **下载安装包**：[GitHub Releases](https://github.com/betzaydarobie-source/Canvas-AI/releases)
+
+---
+
 ## 📜 License
 
-[MIT](LICENSE) © 2025-2026
+[MIT](LICENSE) © 2025-2026 · API 服务由 [yC API](https://www.yccloudapi.online) 提供支持
