@@ -1,0 +1,22 @@
+# 敏感数据：API Key 等环境变量
+.env
+.env.local
+
+# 依赖
+node_modules/
+
+# 构建产物
+release/
+
+# Claude Code 本地配置（含命令权限缓存中的 API key）
+.claude/
+
+# 系统/编辑器
+.DS_Store
+*.log
+.vscode/
+.idea/
+
+# 滚动备份
+*.backup.html
+index.v*.backup.html
